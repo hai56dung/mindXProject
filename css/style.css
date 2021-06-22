@@ -1,0 +1,15 @@
+body{
+    background-image: url(../img/background-bong-da_045001219.jpg);
+}
+.panel{
+    padding: 10em 28em;
+}
+.form{
+    padding: 2em;
+    border-radius: 0.8em;
+    border: 1px solid lightblue;
+    background-color: white;
+}
+.massage{
+    font-size: 1.4em;
+}
