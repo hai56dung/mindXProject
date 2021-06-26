@@ -4,7 +4,7 @@ let submit = document.querySelector(".submit");
 
 if(window.localStorage){
     localStorage.setItem("user","hai56dung");
-    localStorage.setItem("pass","nguyenhaidung123");
+    localStorage.setItem("pass","123456");
 
     let user = localStorage.getItem("user");
     let pass = localStorage.getItem("pass");

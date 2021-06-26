@@ -1,0 +1,38 @@
+.header{
+    background-color: rgb(7, 66, 46);
+    height: 65px;
+}
+.header_navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.header_navbar-list{
+    list-style: none;
+    padding-left: 0ch;
+
+}
+.logo{
+    max-width:98px;
+}
+/* .btn-logo{
+    margin-left: 40px;
+} */
+.header_navbar-item{
+    margin-top: 20px;
+    margin-bottom: 23px;
+    display: inline-block;
+}
+.header_navbar-item :hover{
+    background-color: rgb(36, 161, 53);
+    color: white;
+
+}
+a{
+    padding-top: 22px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom: 22px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
