@@ -1,6 +1,53 @@
 {
-    "id":1,
-    "Name": "Dũng",
-    "Age":20,
-    "Email": "haidung0902@gmail.com"
+    "stadium": [
+      {
+        "id": 1,
+        "name": "Sân Viettel",
+        "price": 120000,
+        "local": "Quận Đông Anh"
+        
+      },
+      {
+        "id": 2,
+        "name": "Sân Đông Ngạc",
+        "price": 200000,
+        "local":"Quận Bắc Từ Liêm"
+      },
+      {
+        "id": 3,
+        "name": "Sân Đông Anh",
+        "price": 150000,
+        "local":"Quận Đông Anh"
+      },
+      {
+        "id": 4,
+        "name": "Sân Hà Đông",
+        "price": 170000,
+        "local":"Quận Hà Đông"
+      },
+      {
+        "id": 5,
+        "name": "Sân Hoàn Kiếm",
+        "price": 90000,
+        "local":"Quận Hoàn Kiếm"
+      }
+    ],
+    
+    "customer": [
+      {
+        "id": 1,
+        "Name": "Dũng",
+        "email": "haidung0902@gmail.com"
+      },
+      {
+        "id": 2,
+        "Name": "Dũng",
+        "email": "haidung0902@gmail.com"
+      },
+      {
+        "id": 3,
+        "Name": "Dũng",
+        "email": "haidung0902@gmail.com"
+      }
+    ]
 }
