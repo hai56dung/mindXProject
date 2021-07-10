@@ -1,23 +1,50 @@
 let userEl = document.querySelector(".txtuser");
 let passEl = document.querySelector(".txtpass");
 let submit = document.querySelector(".submit");
+let showPassEl = document.querySelector("#showPass");
+function checkPass() {
+    if(showPassEl.checked == true){
+        passEl.setAttribute( 'type', 'text' );
+        console.log(passEl.value);
+    }else{
+        passEl.setAttribute( 'type', 'password' );
+    }
+}
 
-if(window.localStorage){
-    localStorage.setItem("user","hai56dung");
-    localStorage.setItem("pass","123456");
+let stadiumApi = '/json/db.json';
 
-    let user = localStorage.getItem("user");
-    let pass = localStorage.getItem("pass");
+function start() {
+    getStadium(checkLogin);
+}
 
-    let message = document.querySelector(".message");
+start();
 
-    submit.addEventListener("click", function() {
-        if(user == userEl.value && pass == passEl.value){
-            window.location = "home.html"
-        }else{
-            message.innerHTML = `Đăng nhập không thành công`;
-        }
-    })
-}else{
-    console.log("not Supported..");
+function getStadium(callback) {
+    fetch(stadiumApi).then(function(response) {
+        return response.json();
+    }).then(data => callback(data.customer))
+}
+
+function checkLogin(customers){
+    let html = customers.map(function(customer) {
+    if(window.localStorage){
+        localStorage.setItem("user",`${customer.NameLogin}`);
+        localStorage.setItem("pass",`${customer.password}`);
+
+        let user = localStorage.getItem("user");
+        let pass = localStorage.getItem("pass");
+
+        console.log(user);
+        console.log(pass);
+        let message = document.querySelector(".message");
+
+        submit.addEventListener("click", function(){
+            if(user == userEl.value && pass == passEl.value){
+                window.location = "home.html";
+            }else{
+                message.innerHTML = `Đăng nhập không thành công`;
+            }
+        })
+    }return "";
+});
 }

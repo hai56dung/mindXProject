@@ -1,4 +1,14 @@
-let stadiumApi = 'http://localhost:3000/stadium';
+let urlParams = new URLSearchParams(window.location.search);
+let district = urlParams.get('district');
+
+console.log(district);
+
+chageTitle = document.querySelector("#title");
+chageTitle.innerHTML = `Sân Bóng khu vực ${district}`
+
+let stadiumApi = '/json/db.json';
+
+// Khởi động hàm
 
 function start() {
     getStadium(renderStadium);
@@ -9,15 +19,17 @@ start();
 function getStadium(callback) {
     fetch(stadiumApi).then(function(response) {
         return response.json();
-    }).then(callback)
+    }).then(data => callback(data.stadium))
 }
 
 function renderStadium(stadiums) {
     let listCoursesBlock = document.querySelector("#listStadium");
     let html = stadiums.map(function(stadium) {
-        return` 
+        if(stadium.local === `${district}`){
+        return`
+        <div class = "col-md-4">
         <div class="card mb-4 shadow-sm">
-                <img class="detail-room" src="../img/Hinh-anh-–-2020-San-Bong-Cu-Chi-Sau-01-Nam-Khai-Thac-2.jpg">
+                <img class="detail-room" src="${stadium.img}">
                 <div class="card-body">
                     <p class="card-text">
                        <p class="title">${stadium.name}</p>
@@ -27,10 +39,13 @@ function renderStadium(stadiums) {
                     </p>
                     <a href="" class="text-decoration-none">Chi tiết>></a>
                 </div>
+        </div>
         </div>    
        ` 
+    }
+    return "";
     });
-    listCoursesBlock.innerHTML = html.join();
+    listCoursesBlock.innerHTML = html.join("");
 }
 
 // function pickStadium(stadium) {
