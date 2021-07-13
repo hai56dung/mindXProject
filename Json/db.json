@@ -5,36 +5,128 @@
         "id": 1,
         "name": "Sân Viettel",
         "price": 120000,
-        "local": "Quận Đông Anh"
+        "local": "Quận Đông Anh",
+        "address":"Ngõ 155, Ngách 155/206 Trường Chinh - Cầu Phương Liệt (Quận Thanh Xuân, Hà Nội) ",
+        "phone-number":"0936656669",
+       
+
+        "description":"Sân bóng là trung tâm thể thao quân đội gồm 2 sân khá, hệ thống chiếu sáng, măt cỏ, diện tích tốt. Sân nằm cuối ngách 155/206 Trường Chinh. Bên ngoài là 2 sân Viettel 1 và Viettel 2",
+        "details":"Sân bóng Viettel 2, được xây dựng và hoàn thành vào năm 2009, bao gồm 12 sân cỏ nhân tạo ( diện tich sân 30m x 45m ), có thể hỗ trợ các loại sân 7,9,11 người. ",
+        "features":
+          [
+          "Canteen khá rộng có thể chứa được nhiều người.",
+          "Bãi để xe thoáng, đèn điện rất sáng. ",
+          "Đầy đủ các tiện ích." 
+          ]
+
+          
+     
         
       },
       {
         "img":"/img/san-bong-dh-su-pham-hanoi-img2.jpg",
         "id": 2,
-        "name": "Sân Đông Ngạc",
+        "name": "Sân bóng đá cỏ nhân tạo Thuỷ Lợi",
         "price": 200000,
-        "local":"Quận Bắc Từ Liêm"
-      },
+        "local":"Quận Đống Đa",
+        "address":"Ngõ 155, Ngách 155/206 Trường Chinh - Cầu Phương Liệt (Quận Thanh Xuân, Hà Nội) ",
+        "phone-number":"0936656669",
+        
+        "description":"Sân Thuỷ Lợi là sân bóng cỏ nhân tạo đầu tiên ở miền Bắc hoàn thành giữa năm 2007.",
+        "details":"Sân bóng đá Thuỷ Lợi đã thu hút sự quan tâm, sử dụng của các đội bóng trẻ. Với quy trình thi công chuẩn, sân bóng với mặt cỏ xanh mướt, mặt sân phẳng mượt, êm ái tạo sự thoải mái cho các cầu thủ khi vận động. ",
+      
+        "features":
+          [
+          "Canteen khá rộng có thể chứa được nhiều người.",
+          "Bãi để xe thoáng, đèn điện rất sáng. ",
+          "Đầy đủ các tiện ích." 
+          ]
+          
+          
+        }
+      ,
       {
         "img":"/img/san-bong-dh-su-pham-hanoi-img2.jpg",
         "id": 3,
-        "name": "Sân Đông Anh",
+        "name": "Sân bóng đá Đại học Sư Phạm Hà Nội",
         "price": 150000,
-        "local":"Quận Đông Anh"
+        "local":"Quận Cầu Giấy",
+        "address":"Ngõ 155, Ngách 155/206 Trường Chinh - Cầu Phương Liệt (Quận Thanh Xuân, Hà Nội) ",
+        "phone-number":"0936656669",
+        "info":
+        {
+        "description":"Sân bóng Đại học Sư Phạm Hà Nội nằm trong khuôn viên trường đại học Sư Phạm Hà Nội. Sân bóng đã thu hút được nhiều sinh viên mà nhân viên văn phòng ghé qua.",
+        "details":"Sân Sư phạm gồm 4 sân mini 5 người, kích thước sân 30x50m. Đây là sân có diện tích lớn, không gian thoáng đãng. Sân được đầu tư hiện đại với hệ thống đèn chiếu sáng ban đêm, lưới chắn bóng, công trình phụ trợ nhằm đáp ứng tốt nhất nhu cầu của người chơi khi đến thi đấu tại sân. ",
+       
+          "features":
+          [
+          "Canteen khá rộng có thể chứa được nhiều người.",
+          "Bãi để xe thoáng, đèn điện rất sáng. ",
+          "Đầy đủ các tiện ích." 
+          ]
+          
+        }
       },
       {
         "img":"/img/san-bong-dh-su-pham-hanoi-img2.jpg",
         "id": 4,
-        "name": "Sân Hà Đông",
+        "name": "Sân bóng cỏ nhân tạo Phòng không – Không quân",
         "price": 170000,
-        "local":"Quận Hà Đông"
+        "local":"Quận Thanh Xuân",
+        "address":"Ngõ 155, Ngách 155/206 Trường Chinh - Cầu Phương Liệt (Quận Thanh Xuân, Hà Nội) ",
+        "phone-number":"0936656669",
+       
+        "description":"Hệ thống sân cỏ nhân tạo Phòng không – Không quân được thiết kế và lắp đặt theo tiêu chuẩn quốc tế, đáp ứng được nhiều các tiêu chí khác nhau",
+        "details":"Cỏ nhân tạo, hạt cao su đều được nhập khẩu, chất lượng sân đáp ứng được các tiêu chí như mặt sân phẳng, cỏ trám đều, độ nẩy thấp, độ đàn hồi, tốc độ bóng lăn, thoát nước tốt… ",
+      
+          "features":
+          [
+          "Canteen khá rộng có thể chứa được nhiều người.",
+          "Bãi để xe thoáng, đèn điện rất sáng. ",
+          "Đầy đủ các tiện ích." 
+          ]
+        
       },
       {
         "img":"/img/san-bong-dh-su-pham-hanoi-img2.jpg",
         "id": 5,
-        "name": "Sân Hoàn Kiếm",
+        "name": "Sân bóng Bách Khoa Hà Nội",
         "price": 90000,
-        "local":"Quận Hoàn Kiếm"
+        "local":"Quận Hai Bà Trưng",
+        "address":"Ngõ 155, Ngách 155/206 Trường Chinh - Cầu Phương Liệt (Quận Thanh Xuân, Hà Nội) ",
+        "phone-number":"0936656669",
+      
+        "description":"Sân bóng Bách Khoa Hà Nội là một trong những sân có quy mô lớn nhất ở khu vực Hai Bà Trưng, gồm 4 sân bóng 7 người với kích thước lớn 30 x 50m, ghép thành 1 sân 11 người.",
+        "details":"Sân vận động Bách Khoa được xem là tổ hơp sân hiện đại và đẳng cấp. Mặt sân được đầu tư với cỏ đẹp, mềm mại, không trơn tượt. Hệ thống luới đèn, bảng hiệu tỷ số rất hiện đại. ",
+       
+        "features":
+        [
+          "Canteen khá rộng có thể chứa được nhiều người.",
+          "Bãi để xe thoáng, đèn điện rất sáng. ",
+          "Đầy đủ các tiện ích." 
+        ]
+          
+        
+      },
+      {
+        "id": 6,
+        "name": "Sân bóng C500 – Học viện An Ninh",
+        "price": 90000,
+        "local":"quận Hà Đông",
+        "address":"Ngõ 155, Ngách 155/206 Trường Chinh - Cầu Phương Liệt (Quận Thanh Xuân, Hà Nội) ",
+        "phone-number":"0936656669",
+      
+        "description":"Sân bóng đá cỏ nhân tạo C500 đã chính thức đi vào hoạt động từ năm 2012, là một trong những sân cỏ nhân tạo đẹp, chất lượng cao nhất tại Hà Nội.",
+        "details":"Sân được sử dụng cỏ nhân tạo cao cấp, theo đúng tiêu chuẩn FIFA, mặt cỏ êm, ma sát tốt, bóng lăn dễ dàng.Các sân có kinhs thước tiêu chuẩn sân 7 người, phù hợp với nhu cầu tập luyện, thi đấu hiện nay của các bạn trẻ. ",
+        
+          
+        "features":
+        [
+          "Canteen khá rộng có thể chứa được nhiều người.",
+          "Bãi để xe thoáng, đèn điện rất sáng. ",
+          "Đầy đủ các tiện ích." 
+        ]
+        
       }
     ],
     
