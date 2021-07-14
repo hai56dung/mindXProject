@@ -35,7 +35,7 @@ function renderStadium(stadiums) {
                        <p class="title">${stadium.name}</p>
                        <p class="detail">${stadium.local}</p>
                        <p class="price">${stadium.price}đ/trận &nbsp;&nbsp;<span class="first-price">200,000đ/trận</span></p>
-                       <p class="address">Hai Bà Trưng - Hà Nội</p>
+                       <p class="address">${stadium.address}</p>
                     </p>
                     <a href="" class="text-decoration-none">Chi tiết>></a>
                 </div>
