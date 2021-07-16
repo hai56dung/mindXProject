@@ -77,3 +77,21 @@
 .sub_item>a{
     color: black;
 }
+
+.head{
+    border-bottom: 1px solid #e5e5e5;;
+    background-color: #f0f0f0;
+    border-top-left-radius: 5px;
+}
+.form-tal{
+    border-radius: 5px;
+}
+h6{
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom:8px;
+}
+.infor{
+    padding-left: 20px;
+    padding-right: 20px;
+}
