@@ -67,6 +67,13 @@ function getStadium(callback) {
     }).then(data => callback(data.customer))
 }
 
+async function start() {
+    const data = await fetch(stadiumApi).then((res) => res.json());
+    checkLogin(data.customer);
+  }
+  
+start();
+
 
 function checkLogin(customers){
     let html = customers.map(function(customer) {
@@ -78,9 +85,10 @@ function checkLogin(customers){
         let pass = localStorage.getItem("pass");
 
         let message = document.querySelector(".message");
-
+        console.log(userEl.value);
         submit.addEventListener("click", function(){
             if(user == userEl.value && pass == passEl.value){
+                localStorage.setItem("dataCus", JSON.stringify(customer));
                 window.location = "home.html";
             }else{
                 message.innerHTML = `Đăng nhập không thành công`;

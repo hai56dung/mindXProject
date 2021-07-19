@@ -1,45 +1,27 @@
-function initMap() {
- 
-    const viettel = { lat: 20.9979887, lng:105.8290721 };
-   
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 16,
-      center: viettel,
-    });
-  
-    const marker = new google.maps.Marker({
-      position: viettel,
-      map: map,
-    });
-}
-
-
 let stadiumApi = "/json/db.json";
 
-// Khởi động hàm
+// // Khởi động hàm
 
-async function start() {
-    let containerEl = document.querySelector(".container");
-    const data = await fetch(stadiumApi).then((res) => res.json())
-    containerEl.innerHTML = window.onload(data.stadium);
-}
+// async function start() {
+//     let containerEl = document.querySelector(".container");
+//     // const data = await fetch(stadiumApi).then((res) => res.json())
+//     containerEl.innerHTML = window.onload(data.stadium);
+// }
 
-start();
+// start();
 
 window.onload = function () {
-    const dataDetail = JSON.parse(localStorage.getItem("dataCard"));
-    console.log(dataDetail);
-    console.log(dataDetail.id);
-    return`
-    <div class="main-center">
-        <div class="slideshow">
-            <button class="slide-button" id="button-left" onclick="plusDivs(-1)">&#10094;</button>
-            <img class="my-slides" src="${dataDetail.img}">
-            <img class="my-slides" src="${dataDetail.img2}">
-            <button class="slide-button" id="button-right" onclick="plusDivs(1)">&#10095;</button>
-          
-            </div>
-        </div>
+  const dataDetail = JSON.parse(localStorage.getItem("dataCard"));
+  console.log(dataDetail);
+  let containerEl = document.querySelector("#container");
+  let imageSlide = document.getElementById("image-slide");
+
+  imageSlide.innerHTML = `
+    <img class="my-slides image-1" src="${dataDetail.img}">
+    <img class="my-slides image-2" src="${dataDetail.img2}">
+  `;
+
+  containerEl.innerHTML = `
           <div class="main-content">
     
           <a href="/html/home.html" alt="">Trở về trang chủ </a>
@@ -114,12 +96,25 @@ window.onload = function () {
                 <li>Các dịch vụ về đồ đạc phụ kiện bóng đá và các loại nước giải khát.</li>
                 
             </ul>
-            <a href="www.google.com"><button class="reserve-button">Đặt sân</button></a>
+            <a href="/html/formInfor.html"><button class="reserve-button">Đặt sân</button></a>
 
     
         </div>
   </div>
 </div>
     
-    `
+    `;
+};
+function initMap() {
+  const viettel = { lat: 20.9979887, lng: 105.8290721 };
+
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 16,
+    center: viettel,
+  });
+
+  const marker = new google.maps.Marker({
+    position: viettel,
+    map: map,
+  });
 }

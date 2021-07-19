@@ -11,8 +11,8 @@ let stadiumApi = "/json/db.json";
 // Khởi động hàm
 
 async function start() {
-    const data = await fetch(stadiumApi).then((res) => res.json())
-    renderStadium(data.stadium);
+  const data = await fetch(stadiumApi).then((res) => res.json());
+  renderStadium(data.stadium);
 }
 
 start();
@@ -22,7 +22,7 @@ function renderStadium(stadiums) {
   let html = stadiums.map(function (stadium) {
     if (stadium.local === `${district}`) {
       localStorage.setItem("dataCard", JSON.stringify(stadium));
-        return `
+      return `
         <div class = "col-md-4">
         <div class="card mb-4 shadow-sm">
                 <img class="detail-room" src="${stadium.img}">
@@ -40,7 +40,6 @@ function renderStadium(stadiums) {
        `;
     }
     return "";
-    
   });
   listCoursesBlock.innerHTML = html.join("");
 }
