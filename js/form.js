@@ -67,7 +67,7 @@ window.onload = function () {
       window.location = "/html/formInfor.html"
     })
   }else{
-    console.log("not support")
+    console.log("not support");
   }
 }
 
