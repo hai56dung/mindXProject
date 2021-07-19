@@ -41,17 +41,7 @@ window.onload = function () {
               <div><img src="/img/clock.png"  style="height: 20px; width: 20px; float:left;padding-right: 5px;"><p><spam style="color:green"><b>Giờ mở của:</b></spam> 6h00 - 23h00</p></div>
             </div>
           
-          <div id="map">
-
-
-
-          </div>
-          <br>
-    
-
-
-
-            
+          
           <p>${dataDetail.description}</p>
           <b>THÔNG TIN CHI TIẾT</b>
 
