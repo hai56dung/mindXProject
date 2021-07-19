@@ -16,6 +16,8 @@ window.onload = function () {
   let containerEl = document.querySelector("#container");
   let imageSlide = document.getElementById("image-slide");
 
+  document.getElementById("headTitle").innerHTML = `${dataDetail.name}`
+
   imageSlide.innerHTML = `
     <img class="my-slides image-1" src="${dataDetail.img}">
     <img class="my-slides image-2" src="${dataDetail.img2}">

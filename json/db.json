@@ -140,6 +140,15 @@
       "password": "23456",
       "email": "haidung0902@gmail.com",
       "adrr": "155 Quan Hoa"
+    },
+    {
+      "id": 4,
+      "Name": "Khải",
+      "phoneNumber": "0148123323",
+      "NameLogin": "khai093",
+      "password": "234567",
+      "email": "khai0301@gmail.com",
+      "adrr": "155 Khuất Duy Tiến"
     }
   ]
 }
